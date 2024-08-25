@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Department of Mathematics, DMU</title>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <div class="menu-icon title">
+            <h4>Department of Mathematics, DMU</h4>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li><a href="#events"><i class="fa-solid fa-calendar-days"></i><span>Events</span></a></li>
+                <li><a href="#gallery"><i class="fa-solid fa-image"></i><span>Gallery</span></a></li>
+                <li><a href="#downloads"><i class="fa-solid fa-download"></i><span>Downloads</span></a></li>
+                <li><a href="#about-contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="left-right-container">
+            <div class="left">
+                <h1>Welcome <br> to the official website of <br> the <span>Department of Mathematics, DMU</span>, and <br> the <span>Students' Forum for Mathematics, DMU</span></h1>
+            </div>
+            <div class="right">
+                <div class="logo-container">
+                    <div class="logo-slider">
+                        <img src="imgs/Logo.png" alt="Students Forum for Mathematics Logo" class="logo logo1 active" draggable="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-text">
+            <h1>Department of Mathematics</h1>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="gallery-title">
+            <h1>Gallery</h1>
+            <p>Explore moments from our events, seminars, workshops, and student activities. See our department and forum in action!</p>
+        </div>
+        <div class="gallery-container">
+            <div class="image-card">
+                <img src="imgs/img1.jpg" alt="Event Image 1">
+            </div>
+            <div class="image-card">
+                <img src="imgs/img2.jpg" alt="Event Image 2">
+            </div>
+            <div class="image-card">
+                <img src="imgs/img3.jpg" alt="Event Image 3">
+            </div>
+            <div class="image-card">
+                <img src="imgs/img4.jpg" alt="Event Image 4">
+            </div>
+        </div>
+        <div class="gallery-container">
+            <div class="image-card">
+                <img src="imgs/img5.jpg" alt="Event Image 1">
+            </div>
+            <div class="image-card">
+                <img src="imgs/img6.jpg" alt="Event Image 2">
+            </div>
+            <div class="image-card">
+                <img src="imgs/img7.jpg" alt="Event Image 3">
+            </div>
+            <div class="image-card">
+                <img src="imgs/img8.jpg" alt="Event Image 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="event-title">
+            <h1>Events and Works</h1>
+            <p>A list of all the events organized by the Students' Forum for Mathematics, DMU along with the Department of Mathematics, DMU</p>
+        </div>
+        <div class="events-container">
+            <div class="event">
+                <h2>25/08/2024</h2>
+                <p>The forum organized a one-day social service program on the 25th August, 2024.</p>
+            </div>
+            <div class="event">
+                <h2>13/05/2024</h2>
+                <p>A new Convenor-in-Charge was selected on 13th May, 2024. Two new Co-Convenor-in-Charges were also selected for DM Science and DM Arts.</p>
+            </div>    
+            <div class="event">
+                <h2>06/05/2024</h2>
+                <p>The forum organized a fund drive to help the students affected by the hailstorm that tore down thousands of houses on 5th May, 2024</p>
+            </div> 
+        </div>   
+        <div class="events-container">
+            <div class="event">
+                <h2>29/02/2024</h2>
+                <p>The forum, along with the Department of Mathematics, DM Science, inaugurated the newly constructed Study Park of the Dept. of Mathematics, DM Science.</p>
+            </div>
+            <div class="event">
+                <h2>08/01/2024</h2>
+                <p>A general meeting was held at the central hall of DM College of Science for a significant expansion of the members of the forum, which was the inclusion of the students of DM Arts and GP Women's College.</p>
+            </div>
+            <div class="event">
+                <h2>22/12/2023</h2>
+                <p>Organized by the forum, for the first time ever in DMU, National Mathematics Day was celebrated on the 22nd December 2023.</p>
+            </div>
+        </div>     
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads">
+        <div class="downloads-title">
+            <h1>Downloads</h1>
+            <p>Access previous years' question papers for both undergraduate and postgraduate programs. Enhance your preparation with our resources.</p>
+        </div>
+        
+        <div class="downloads-container">
+            <!-- PG Students Container -->
+            <div class="pg-container">
+                <h2>PG Students</h2>
+                <div class="pdf-list">
+                    <div class="pdf-item"><a href="pg-file1.pdf" target="_blank">PG Question Paper 1</a></div>
+                    <div class="pdf-item"><a href="pg-file2.pdf" target="_blank">PG Question Paper 2</a></div>
+                    <div class="pdf-item"><a href="pg-file3.pdf" target="_blank">PG Question Paper 3</a></div>
+                    <div class="pdf-item"><a href="pg-file4.pdf" target="_blank">PG Question Paper 4</a></div>
+                    <div class="pdf-item hidden"><a href="pg-file5.pdf" target="_blank">PG Question Paper 5</a></div>
+                    <div class="pdf-item hidden"><a href="pg-file6.pdf" target="_blank">PG Question Paper 6</a></div>
+                    <!-- Add more hidden pdf-item divs as needed -->
+                </div>
+                <button class="see-more" onclick="toggleVisibility('pg-container')">See more</button>
+            </div>
+
+            <!-- UG Students Container -->
+            <div class="ug-container">
+                <h2>UG Students</h2>
+                <div class="pdf-list">
+                    <div class="pdf-item"><a href="ug-file1.pdf" target="_blank">UG Question Paper 1</a></div>
+                    <div class="pdf-item"><a href="ug-file2.pdf" target="_blank">UG Question Paper 2</a></div>
+                    <div class="pdf-item"><a href="ug-file3.pdf" target="_blank">UG Question Paper 3</a></div>
+                    <div class="pdf-item"><a href="ug-file4.pdf" target="_blank">UG Question Paper 4</a></div>
+                    <div class="pdf-item hidden"><a href="ug-file5.pdf" target="_blank">UG Question Paper 5</a></div>
+                    <div class="pdf-item hidden"><a href="ug-file6.pdf" target="_blank">UG Question Paper 6</a></div>
+                    <!-- Add more hidden pdf-item divs as needed -->
+                </div>
+                <button class="see-more" onclick="toggleVisibility('ug-container')">See more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About and Contact Us Section -->
+    <section id="about-contact">
+        <div class="about-us">
+            <h1>About Us</h1>
+            <p>The Students' Forum for Mathematics, DMU, is dedicated to fostering a supportive academic environment. We organize events to bring students together and ensure a neat and clean atmosphere conducive to learning. Our goal is to listen to students' complaints and work towards resolving them efficiently.</p>
+            <div class="contact-info">
+                <p><strong>Location:</strong> Department of Mathematics, DMU, Campus 1</p>
+                <p><strong>Email:</strong> forum@mathdmu.edu</p>
+                <p><strong>Phone:</strong> +91-1234567890</p>
+            </div>
+        </div>
+        
+        <div class="contact-us">
+            <h1>Contact Us</h1>
+            <form action="your_form_processing_script.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </div>                              
+                <div class="form-group">
+                    <label for="roll-number">Roll Number:</label>
+                    <input type="text" id="roll-number" name="roll-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message/Complaints:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; 2023 Students' Forum for Mathematics, DMU. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
