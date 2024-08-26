@@ -65,7 +65,7 @@ nav ul li a {
 }
 
 #home {
-    background-color: #000000;
+    background: url(imgs/bckgrnd.jpg);
     display: flex;
     flex-direction: column;
     height: 100vh; /* Full height minus navbar */
@@ -121,6 +121,44 @@ nav ul li a {
 
 .logo2 {
     height: 200px;
+}
+
+.left-slide, .right-slide {
+    opacity: 0;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.left-slide {
+    transform: translateX(-100%);
+}
+
+.right-slide {
+    transform: translateX(100%);
+}
+
+.scroll-slide-in {
+    opacity: 0;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.scroll-left-slide {
+    transform: translateX(-100%);
+}
+
+.scroll-right-slide {
+    transform: translateX(100%);
+}
+
+.scroll-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .scroll-text {
@@ -179,10 +217,6 @@ nav ul li a {
     padding-top: 20px;
 }
 
-hr {
-    margin: 40px;
-    transform: translateY(20px);
-}
 
 /* Gallery container with Flexbox */
 .gallery-container {
@@ -234,12 +268,12 @@ hr {
 
 .faculty-title {
     padding-top: 20px;
-    font-size: 50px;
     margin-left: 100px;
 }
 
 .faculty-title h1 {
     margin-bottom: 20px;
+    font-size: 50px;
 }
 
 #dmsc-gallery,
@@ -306,9 +340,14 @@ hr {
     margin-left: 40px;
 }
 
-.see-more.gallery-see-more {
-    margin-top: 40px;
-    transform: translateX(540px);
+.forum {
+    background: #032f41;
+    padding: 80px 20px;
+}
+
+.forum h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 /* Events section styles */
@@ -324,6 +363,7 @@ hr {
 
 .event-title h1 {
     font-size: 50px;
+    margin-bottom: 20px;
 }
 
 /* Events container using Flexbox */

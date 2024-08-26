@@ -1,3 +1,5 @@
+// Complaint Submission
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxtLsmIOylZkx8IdupxEKwkovvbgoDFlO8lgIBXPzPzR7KR2xzekzGw0Kz9ARD-sU3y/exec';
 const form = document.getElementById('complaint-form');
 
@@ -31,6 +33,8 @@ form.addEventListener('submit', e => {
             alert('Error: ' + error.message);
         });
 });
+
+//Previous Years Questions
 
 document.querySelectorAll('.accordion-tab').forEach(function(tab) {
     tab.addEventListener('click', function() {
@@ -83,3 +87,34 @@ toggleGallery('dmu-gallery', '.dmu');
 toggleGallery('dmsc-gallery', '.dmsc');
 toggleGallery('dmarts-gallery', '.dmarts');
 toggleGallery('gp-gallery', '.gp');
+
+// Front Page Slide In
+
+window.addEventListener('load', () => {
+    const slideElements = document.querySelectorAll('.slide-in');
+
+    slideElements.forEach(element => {
+        element.classList.add('visible');
+    });
+});
+
+
+// Scroll Slide
+
+function slideInOnScroll() {
+    const slideElements = document.querySelectorAll('.scroll-slide-in');
+
+    slideElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementTop < windowHeight - 100) {
+            element.classList.add('scroll-visible');
+        }
+    });
+}
+
+window.addEventListener('scroll', slideInOnScroll);
+
+// Trigger the function on page load as well
+slideInOnScroll();
