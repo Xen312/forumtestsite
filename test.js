@@ -1,17 +1,14 @@
-function slideInOnScroll() {
-    const slideElements = document.querySelectorAll('.slide-in');
+document.addEventListener("DOMContentLoaded", function() {
+    // Logo Slider Logic
+    let currentLogoIndex = 0;
+    const logos = document.querySelectorAll('.logo-slider img');
+    const totalLogos = logos.length;
 
-    slideElements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+    function showNextLogo() {
+        logos[currentLogoIndex].classList.remove('active');
+        currentLogoIndex = (currentLogoIndex + 1) % totalLogos;
+        logos[currentLogoIndex].classList.add('active');
+    }
 
-        if (elementTop < windowHeight - 100) {
-            element.classList.add('visible');
-        }
-    });
-}
-
-window.addEventListener('scroll', slideInOnScroll);
-
-// Trigger the function on page load as well
-slideInOnScroll();
+    setInterval(showNextLogo, 3000); // Change logo every 3 seconds
+});

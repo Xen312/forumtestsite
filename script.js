@@ -118,3 +118,25 @@ window.addEventListener('scroll', slideInOnScroll);
 
 // Trigger the function on page load as well
 slideInOnScroll();
+
+// Events Photo Click
+
+function showGallery(galleryId) {
+    document.getElementById(galleryId).style.display = 'flex';
+}
+
+function hideGallery(galleryId, event) {
+    event.stopPropagation(); // Prevents the click event from propagating to the parent
+    document.getElementById(galleryId).style.display = 'none';
+}
+
+function showFullImage(img) {
+    const fullImageView = document.getElementById('fullImageView');
+    const fullImage = document.getElementById('fullImage');
+    fullImage.src = img.src;
+    fullImageView.style.display = 'flex';
+}
+
+function hideFullImage() {
+    document.getElementById('fullImageView').style.display = 'none';
+}

@@ -28,13 +28,17 @@
     <!-- Home Section -->
     <section id="home" class="home">
         <div class="left-right-container">
-            <div class="left left-slide slide-in">
-                <h1>Welcome <br> to the official website of <br> the <span>Department of Mathematics, DMU</span>, and <br> the <span>Students' Forum for Mathematics, DMU</span></h1>
+            <div class="left left-slide slide-in animated-text">
+                <h1>Welcome <br> to the official website of the<br>
+                    <span class="first"></span>
+                    <span class="second"></span>
+                </h1>
             </div>
             <div class="right right-slide slide-in">
                 <div class="logo-container">
                     <div class="logo-slider">
-                        <img src="imgs/Logo.png" alt="Students Forum for Mathematics Logo" class="logo logo1 active" draggable="false">
+                        <img src="imgs/Logo.png" alt="Students Forum for Mathematics Logo" class="logo logo2 active" draggable="false">
+                        
                     </div>
                 </div>
             </div>
@@ -52,19 +56,19 @@
         </div>
         <div class="gallery-container">
             <div class="image-card">
-                <img src="imgs/pro.png" alt="Event Image 1">
+                <img src="imgs/dmu.png" alt="Dhanamanjuri University">
                 <button class="dmu">DM University</button>
             </div>
             <div class="image-card">
-                <img src="imgs/pro.png" alt="Event Image 2">
+                <img src="imgs/dmsc.png" alt="DM College of Science">
                 <button class="dmsc">DM College of Science</button>
             </div>
             <div class="image-card">
-                <img src="imgs/pro.png" alt="Event Image 3">
+                <img src="imgs/dmarts.png" alt="Event Image 3">
                 <button class="dmarts">DMU College of Arts</button>
             </div>
             <div class="image-card">
-                <img src="imgs/pro.png" alt="Event Image 4">
+                <img src="imgs/gp.png" alt="GP Women's College">
                 <button class="gp">GP Women's College</button>
             </div>
         </div>
@@ -250,31 +254,6 @@
             </div>
         </div>
     </section>
-    <hr>
-    <section class="forum">
-        <div class="gallery-title">
-            <h1 class="scroll-slide-in scroll-left-slide">Forum Works and Events</h1>
-            <p class="scroll-slide-in scroll-right-slide">Explore moments from our events, seminars, workshops, and student activities. See our department and forum in action!</p>
-        </div>
-        <div class="gallery-container">
-            <div class="image-card">
-                <img src="imgs/pro.png" alt="Event Image 1">
-                <button class="dmu">Forum Button</button>
-            </div>
-            <div class="image-card">
-                <img src="imgs/pro.png" alt="Event Image 2">
-                <button class="dmu">Forum Button</button>
-            </div>
-            <div class="image-card">
-                <img src="imgs/pro.png" alt="Event Image 3">
-                <button class="dmu">Forum Button</button>
-            </div>
-            <div class="image-card">
-                <img src="imgs/pro.png" alt="Event Image 4">
-                <button class="dmu">Forum Button</button>
-            </div>
-        </div>
-    </section>
 
     <!-- Events Section -->
     <section id="events" class="events">
@@ -283,48 +262,142 @@
             <p class="scroll-slide-in scroll-right-slide">A list of all the events organized by the Students' Forum for Mathematics, DMU along with the Department of Mathematics, DMU</p>
         </div>
         <div class="events-container">
-            <div class="event">
+            <div class="event" onclick="showGallery('gallery-1')">
                 <h2>25/08/2024</h2>
                 <p>The forum organized a one-day social service program on the 25th August, 2024.</p>
+                <div class="gallery" id="gallery-1">
+                    <span class="close" onclick="hideGallery('gallery-1', event)">&times;</span>
+                    <div class="gallery-content">
+                        <img src="imgs/04-10-2023.jpg" alt=""
+                        onclick="showFullImage(this)">
+                        <img src="imgs/04-10-2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/04-10-2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/04-10-2023.jpg" alt="" onclick="showFullImage(this)">
+                    </div>
+                </div>
             </div>
-            <div class="event">
+            <div class="event" onclick="showGallery('gallery-2')">
                 <h2>13/05/2024</h2>
                 <p>A new Convenor-in-Charge was selected on 13th May, 2024. Two new Co-Convenor-in-Charges were also selected for DM Science and DM Arts.</p>
+                <div class="gallery" id="gallery-2">
+                    <span class="close" onclick="hideGallery('gallery-2', event)">&times;</span>
+                    <div class="gallery-content">
+                        <img src="imgs/13-12-2023(1).jpg" alt=""
+                        onclick="showFullImage(this)">
+                        <img src="imgs/13-12-2023(1).jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/13-12-2023(1).jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/13-12-2023(1).jpg" alt="" onclick="showFullImage(this)">
+                    </div>
+                </div>
             </div>    
-            <div class="event">
+            <div class="event" onclick="showGallery('gallery-3')">
                 <h2>06/05/2024</h2>
                 <p>The forum organized a fund drive to help the students affected by the hailstorm that tore down thousands of houses on 5th May, 2024</p>
+                <div class="gallery" id="gallery-3">
+                    <span class="close" onclick="hideGallery('gallery-3', event)">&times;</span>
+                    <div class="gallery-content">
+                        <img src="imgs/13-12-2023.jpg" alt=""
+                        onclick="showFullImage(this)">
+                        <img src="imgs/13-12-2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/13-12-2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/13-12-2023.jpg" alt="" onclick="showFullImage(this)">
+                    </div>
+                </div>
             </div> 
         </div>   
         <div class="events-container">
-            <div class="event">
+            <div class="event" onclick="showGallery('gallery-4')">
                 <h2>29/02/2024</h2>
                 <p>The forum, along with the Department of Mathematics, DM Science, inaugurated the newly constructed Study Park of the Dept. of Mathematics, DM Science.</p>
+                <div class="gallery" id="gallery-4">
+                    <span class="close" onclick="hideGallery('gallery-4', event)">&times;</span>
+                    <div class="gallery-content">
+                        <img src="imgs/22-12-2023(1).jpg" alt=""
+                        onclick="showFullImage(this)">
+                        <img src="imgs/22-12-2023(1).jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/22-12-2023(1).jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/22-12-2023(1).jpg" alt="" onclick="showFullImage(this)">
+                    </div>
+                </div>
             </div>
-            <div class="event">
+            <div class="event" onclick="showGallery('gallery-5')">
                 <h2>08/01/2024</h2>
                 <p>A general meeting was held at the central hall of DM College of Science for a significant expansion of the members of the forum, which was the inclusion of the students of DM Arts and GP Women's College.</p>
+                <div class="gallery" id="gallery-5">
+                    <span class="close" onclick="hideGallery('gallery-5', event)">&times;</span>
+                    <div class="gallery-content">
+                        <img src="imgs/22-12-2023.jpg" alt=""
+                        onclick="showFullImage(this)">
+                        <img src="imgs/22-12-2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/22-12-2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/22-12-2023.jpg" alt="" onclick="showFullImage(this)">
+                    </div>
+                </div>
             </div>
-            <div class="event">
+            <div class="event" onclick="showGallery('gallery-6')">
                 <h2>22/12/2023</h2>
                 <p>Organized by the forum, for the first time ever in DMU, National Mathematics Day was celebrated on the 22nd December 2023.</p>
+                <div class="gallery" id="gallery-6">
+                    <span class="close" onclick="hideGallery('gallery-6', event)">&times;</span>
+                    <div class="gallery-content">
+                        <img src="imgs/26-12-2023.jpg" alt=""
+                        onclick="showFullImage(this)">
+                        <img src="imgs/26-12-2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/26-12-2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/26-12-2023.jpg" alt="" onclick="showFullImage(this)">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="events-container">
-            <div class="event">
-                <h2>29/02/2024</h2>
-                <p>The forum, along with the Department of Mathematics, DM Science, inaugurated the newly constructed Study Park of the Dept. of Mathematics, DM Science.</p>
+            <div class="event" onclick="showGallery('gallery-7')">
+                <h2>14/10/2023</h2>
+                <p>The forum, along with the Department of Mathematics, DM Science, organized a one day social service cum tree plantation program.</p>
+                <div class="gallery" id="gallery-7">
+                    <span class="close" onclick="hideGallery('gallery-7', event)">&times;</span>
+                    <div class="gallery-content">
+                        <img src="imgs/Social Service Cum Tree Plantation Programme 14th October, 2023.jpg" alt=""
+                        onclick="showFullImage(this)">
+                        <img src="imgs/Social Service Cum Tree Plantation Programme 14th October, 2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/Social Service Cum Tree Plantation Programme 14th October, 2023.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/Social Service Cum Tree Plantation Programme 14th October, 2023.jpg" alt="" onclick="showFullImage(this)">
+                    </div>
+                </div>
             </div>
-            <div class="event">
-                <h2>08/01/2024</h2>
-                <p>A general meeting was held at the central hall of DM College of Science for a significant expansion of the members of the forum, which was the inclusion of the students of DM Arts and GP Women's College.</p>
+            <div class="event" onclick="showGallery('gallery-8')">
+                <h2>09/10/2024</h2>
+                <p>The forum lodged a complaint to the VC of DMU for the scarcity of teachers in the Mathematics Department of DM Science.</p>
+                <div class="gallery" id="gallery-8">
+                    <span class="close" onclick="hideGallery('gallery-8', event)">&times;</span>
+                    <div class="gallery-content">
+                        <img src="imgs/29-02-2024(1).jpg" alt=""
+                        onclick="showFullImage(this)">
+                        <img src="imgs/29-02-2024(1).jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/29-02-2024(1).jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/29-02-2024(1).jpg" alt="" onclick="showFullImage(this)">
+                    </div>
+                </div>
             </div>
-            <div class="event">
-                <h2>22/12/2023</h2>
-                <p>Organized by the forum, for the first time ever in DMU, National Mathematics Day was celebrated on the 22nd December 2023.</p>
+            <div class="event" onclick="showGallery('gallery-9')">
+                <h2>26/09/2023</h2>
+                <p>A General Body meeting was held at the PG Block, Dept. of Mathematics, DMU in the presence of 250 students of Mathematics Dept. of DM Science and the Students' Forum for Mathematics was formed.</p>
+                <div class="gallery" id="gallery-9">
+                    <span class="close" onclick="hideGallery('gallery-9', event)">&times;</span>
+                    <div class="gallery-content">
+                        <img src="imgs/29-02-2024.jpg" alt=""
+                        onclick="showFullImage(this)">
+                        <img src="imgs/29-02-2024.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/29-02-2024.jpg" alt="" onclick="showFullImage(this)">
+                        <img src="imgs/29-02-2024.jpg" alt="" onclick="showFullImage(this)">
+                    </div>
+                </div>
             </div>
-        </div>     
+        </div>
     </section>
+    <div class="full-image-view" id="fullImageView">
+        <span class="close" onclick="hideFullImage()">&times;</span>
+        <img id="fullImage" src="" alt="Full Image">
+      </div>
 
     <!-- Downloads Section -->
     <section id="downloads">
