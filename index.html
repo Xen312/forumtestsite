@@ -17,6 +17,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li><a href="#notifications"><span>Notifications</span></a></li>
                 <li><a href="#gallery"><i class="fa-solid fa-image"></i><span>Gallery</span></a></li>
                 <li><a href="#events"><i class="fa-solid fa-calendar-days"></i><span>Events</span></a></li>
                 <li><a href="#downloads"><i class="fa-solid fa-download"></i><span>Downloads</span></a></li>
@@ -130,8 +131,8 @@
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Prof. M. Kuber Singh</h2>
-                    <p>Head of Department, Mathematics, <br> D.M. College of Science</p>
+                    <h2>M. Krishnanando Singh</h2>
+                    <p>Associate Professor, Department of Mathematics, D.M. College of Science</p>
                 </div>
             </div>
         </div>
@@ -139,15 +140,15 @@
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Prof. M. Kuber Singh</h2>
-                    <p>Head of Department, Mathematics, <br> D.M. College of Science</p>
+                    <h2>Dr. K. Sangita Devi</h2>
+                    <p>Associate Professor, Department of Mathematics, D.M. College of Science</p>
                 </div>
             </div>
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Prof. M. Kuber Singh</h2>
-                    <p>Head of Department, Mathematics, <br> D.M. College of Science</p>
+                    <h2>Dr. Th. Rojita Chanu</h2>
+                    <p>Assistant Professor, Department of Mathematics, D.M. College of Science</p>
                 </div>
             </div>
         </div>
@@ -178,15 +179,15 @@
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Nilachandra</h2>
-                    <p>Head of Department, Mathematics, <br> D.M. College of Arts</p>
+                    <h2>Dr. Th. Nilachandra Singh</h2>
+                    <p>Associate Professor and Head of Department, Mathematics, <br> D.M. College of Arts</p>
                 </div>
             </div>
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Nilachandra</h2>
-                    <p>Head of Department, Mathematics, <br> D.M. College of Arts</p>
+                    <h2>Dr. Th. Indubala Devi</h2>
+                    <p>Assistant Professor, Department of Mathematics, D.M. College of Arts</p>
                 </div>
             </div>
         </div>
@@ -194,15 +195,15 @@
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Nilachandra</h2>
-                    <p>Head of Department, Mathematics, <br> D.M. College of Arts</p>
+                    <h2>Dr. S. Kiranmala Chanu</h2>
+                    <p>Assistant Professor, Department of Mathematics, D.M. College of Arts</p>
                 </div>
             </div>
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Nilachandra</h2>
-                    <p>Head of Department, Mathematics, <br> D.M. College of Arts</p>
+                    <h2>Dr. Kh. Bulbul Singh</h2>
+                    <p>Assistant Professor, Department of Mathematics, D.M. College of Arts</p>
                 </div>
             </div>
         </div>
@@ -217,15 +218,15 @@
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Assoc. Prof. S. Samarendra Singh</h2>
+                    <h2>Dr. S. Samarendra Singh</h2>
                     <p>Head of Department, Mathematics, <br> G.P. Women's College</p>
                 </div>
             </div>
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Assoc. Prof. S. Samarendra Singh</h2>
-                    <p>Head of Department, Mathematics, <br> G.P. Women's College</p>
+                    <h2>Dr. N. Priyobarta Singh</h2>
+                    <p>Assistant Professor, Department of Mathematics, G.P. Women's College</p>
                 </div>
             </div>
         </div>
@@ -233,15 +234,15 @@
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Assoc. Prof. S. Samarendra Singh</h2>
-                    <p>Head of Department, Mathematics, <br> G.P. Women's College</p>
+                    <h2>Dr. M. Saratchandra Singh</h2>
+                    <p>Assistant Professor, Department of Mathematics, G.P. Women's College</p>
                 </div>
             </div>
             <div class="teacher">
                 <img src="imgs/pro.png">
                 <div class="descrpt">
-                    <h2>Assoc. Prof. S. Samarendra Singh</h2>
-                    <p>Head of Department, Mathematics, <br> G.P. Women's College</p>
+                    <h2>Dr. A. Ingocha Singh</h2>
+                    <p>Assistant Professor, Department of Mathematics, G.P. Women's College</p>
                 </div>
             </div>
         </div>
@@ -385,136 +386,235 @@
         </div>
         
         <div class="downloads-container">
-            <!-- PG Students Container -->
-            <div class="pg-container">
-                <h2>PG Students</h2>
-                <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-tab">2020</div>
-                      <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                        </ul>
-                      </div>
+            <!-- Previous Years Questions Container -->
+            <div class="downloads">
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'pg-content')">PG Students</button>
+                    <button class="tab-button" onclick="openTab(event, 'ug-content')">UG Students</button>
+                </div>
+                <div class="tab-content active" id="pg-content">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                          <div class="accordion-tab">2020</div>
+                          <div class="accordion-content">
+                            <ul>
+                                <li><a href="#">1st Semester</a></li>
+                                <li><a href="#">2nd Semester</a></li>
+                                <li><a href="#">3rd Semester</a></li>
+                                <li><a href="#">4th Semester</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <div class="accordion-tab">2021</div>
+                          <div class="accordion-content">
+                            <ul>
+                                <li><a href="#">1st Semester</a></li>
+                                <li><a href="#">2nd Semester</a></li>
+                                <li><a href="#">3rd Semester</a></li>
+                                <li><a href="#">4th Semester</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <div class="accordion-tab">2022</div>
+                          <div class="accordion-content">
+                            <ul>
+                                <li><a href="#">1st Semester</a></li>
+                                <li><a href="#">2nd Semester</a></li>
+                                <li><a href="#">3rd Semester</a></li>
+                                <li><a href="#">4th Semester</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <div class="accordion-tab">2023</div>
+                          <div class="accordion-content">
+                            <ul>
+                                <li><a href="#">1st Semester</a></li>
+                                <li><a href="#">2nd Semester</a></li>
+                                <li><a href="#">3rd Semester</a></li>
+                                <li><a href="#">4th Semester</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-tab">2024</div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="#">1st Semester</a></li>
+                                    <li><a href="#">2nd Semester</a></li>
+                                    <li><a href="#">3rd Semester</a></li>
+                                    <li><a href="#">4th Semester</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-tab">2025</div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="#">1st Semester</a></li>
+                                    <li><a href="#">2nd Semester</a></li>
+                                    <li><a href="#">3rd Semester</a></li>
+                                    <li><a href="#">4th Semester</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="accordion-item">
-                      <div class="accordion-tab">2021</div>
-                      <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <div class="accordion-tab">2022</div>
-                      <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <div class="accordion-tab">2023</div>
-                      <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <div class="accordion-tab">2024</div>
-                      <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                        </ul>
-                      </div>
+                </div>
+
+                <div class="tab-content" id="ug-content">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-tab">2020</div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="#">1st Semester</a></li>
+                                    <li><a href="#">2nd Semester</a></li>
+                                    <li><a href="#">3rd Semester</a></li>
+                                    <li><a href="#">4th Semester</a></li>
+                                    <li><a href="#">5th Semester</a></li>
+                                    <li><a href="#">6th Semester</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-tab">2021</div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="#">1st Semester</a></li>
+                                    <li><a href="#">2nd Semester</a></li>
+                                    <li><a href="#">3rd Semester</a></li>
+                                    <li><a href="#">4th Semester</a></li>
+                                    <li><a href="#">5th Semester</a></li>
+                                    <li><a href="#">6th Semester</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-tab">2022</div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="#">1st Semester</a></li>
+                                    <li><a href="#">2nd Semester</a></li>
+                                    <li><a href="#">3rd Semester</a></li>
+                                    <li><a href="#">4th Semester</a></li>
+                                    <li><a href="#">5th Semester</a></li>
+                                    <li><a href="#">6th Semester</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-tab">2023</div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="#">1st Semester</a></li>
+                                    <li><a href="#">2nd Semester</a></li>
+                                    <li><a href="#">3rd Semester</a></li>
+                                    <li><a href="#">4th Semester</a></li>
+                                    <li><a href="#">5th Semester</a></li>
+                                    <li><a href="#">6th Semester</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-tab">2024</div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="#">1st Semester</a></li>
+                                    <li><a href="#">2nd Semester</a></li>
+                                    <li><a href="#">3rd Semester</a></li>
+                                    <li><a href="#">4th Semester</a></li>
+                                    <li><a href="#">5th Semester</a></li>
+                                    <li><a href="#">6th Semester</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-tab">2025</div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="#">1st Semester</a></li>
+                                    <li><a href="#">2nd Semester</a></li>
+                                    <li><a href="#">3rd Semester</a></li>
+                                    <li><a href="#">4th Semester</a></li>
+                                    <li><a href="#">5th Semester</a></li>
+                                    <li><a href="#">6th Semester</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- UG Students Container -->
-            <div class="ug-container">
-                <h2>UG Students</h2>
+            <!-- Sample Questions Container -->
+            <div class="sample-questions">
+                <h2>Sample Questions</h2>
                 <div class="accordion">
                     <div class="accordion-item">
-                      <div class="accordion-tab">2020</div>
-                      <div class="accordion-content">
-                        <ul>
-                          <li><a href="#">1st Semester</a></li>
-                          <li><a href="#">2nd Semester</a></li>
-                          <li><a href="#">3rd Semester</a></li>
-                          <li><a href="#">4th Semester</a></li>
-                          <li><a href="#">5th Semester</a></li>
-                          <li><a href="#">6th Semester</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <div class="accordion-tab">2021</div>
-                      <div class="accordion-content">
-                        <ul>
+                        <div class="accordion-tab">2020</div>
+                        <div class="accordion-content">
+                            <ul>
                             <li><a href="#">1st Semester</a></li>
                             <li><a href="#">2nd Semester</a></li>
                             <li><a href="#">3rd Semester</a></li>
                             <li><a href="#">4th Semester</a></li>
                             <li><a href="#">5th Semester</a></li>
                             <li><a href="#">6th Semester</a></li>
-                        </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-tab">2021</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="#">1st Semester</a></li>
+                                <li><a href="#">2nd Semester</a></li>
+                                <li><a href="#">3rd Semester</a></li>
+                                <li><a href="#">4th Semester</a></li>
+                                <li><a href="#">5th Semester</a></li>
+                                <li><a href="#">6th Semester</a></li>
+                            </ul>
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <div class="accordion-tab">2022</div>
-                      <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                            <li><a href="#">5th Semester</a></li>
-                            <li><a href="#">6th Semester</a></li>
-                        </ul>
-                      </div>
+                        <div class="accordion-tab">2022</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="#">1st Semester</a></li>
+                                <li><a href="#">2nd Semester</a></li>
+                                <li><a href="#">3rd Semester</a></li>
+                                <li><a href="#">4th Semester</a></li>
+                                <li><a href="#">5th Semester</a></li>
+                                <li><a href="#">6th Semester</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="accordion-item">
-                      <div class="accordion-tab">2023</div>
-                      <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                            <li><a href="#">5th Semester</a></li>
-                            <li><a href="#">6th Semester</a></li>
-                        </ul>
-                      </div>
+                        <div class="accordion-tab">2023</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="#">1st Semester</a></li>
+                                <li><a href="#">2nd Semester</a></li>
+                                <li><a href="#">3rd Semester</a></li>
+                                <li><a href="#">4th Semester</a></li>
+                                <li><a href="#">5th Semester</a></li>
+                                <li><a href="#">6th Semester</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="accordion-item">
-                      <div class="accordion-tab">2024</div>
-                      <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                            <li><a href="#">5th Semester</a></li>
-                            <li><a href="#">6th Semester</a></li>
-                        </ul>
-                      </div>
+                        <div class="accordion-tab">2024</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="#">1st Semester</a></li>
+                                <li><a href="#">2nd Semester</a></li>
+                                <li><a href="#">3rd Semester</a></li>
+                                <li><a href="#">4th Semester</a></li>
+                                <li><a href="#">5th Semester</a></li>
+                                <li><a href="#">6th Semester</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -523,7 +623,7 @@
 
     <!-- About and Contact Us Section -->
     <section id="about-contact">
-        <div class="about-us scroll-slide-in scroll-left-slide"">
+        <div class="about-us scroll-slide-in scroll-left-slide">
             <h1>About Us</h1>
             <p>The Students' Forum for Mathematics, DMU, is dedicated to fostering a supportive academic environment. We organize events to bring students together and ensure a neat and clean atmosphere conducive to learning. Our goal is to listen to students' complaints and work towards resolving them efficiently.</p>
             <div class="contact-info">

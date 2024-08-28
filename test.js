@@ -1,13 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let currentLogoIndex = 0;
-    const logos = document.querySelectorAll('.logo-slider img');
-    const totalLogos = logos.length;
+// Tab switching function
+function openTab(event, tabId) {
+    var i, tabContent, tabButtons;
 
-    function showNextLogo() {
-        logos[currentLogoIndex].classList.remove('active');
-        currentLogoIndex = (currentLogoIndex + 1) % totalLogos;
-        logos[currentLogoIndex].classList.add('active');
+    // Hide all tab content
+    tabContent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].classList.remove("active");
     }
 
-    setInterval(showNextLogo, 3000); // Change logo every 3 seconds
-});
+    // Remove active class from all buttons
+    tabButtons = document.getElementsByClassName("tab-button");
+    for (i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+
+    // Show the current tab and add active class to the button
+    document.getElementById(tabId).classList.add("active");
+    event.currentTarget.classList.add("active");
+}
+
+// Accordion functionality
+var acc = document.getElementsByClassName("accordion-tab");
+for (var i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        var content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+}

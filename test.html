@@ -7,30 +7,52 @@
     <title>Test</title>
 </head>
 <body>
-    <section id="home" class="home">
-        <div class="left-right-container">
-            <div class="left left-slide slide-in animated-text">
-                <h1>Welcome <br> to the official website of the<br>
-                    <span class="first"></span>
-                    <span class="second"></span>
-                </h1>
-            </div>
-            <div class="right right-slide slide-in">
-                <div class="logo-container">
-                    <div class="logo-slider">
-                        <img src="imgs/dmu.png" alt="" class="logo logo1 active" draggable="false">
-                        <img src="imgs/Logo.png" alt="Students Forum for Mathematics Logo" class="logo logo2" draggable="false">
-                        <img src="imgs/dmsc.png" alt="" class="logo logo3" draggable="false">
-                        <img src="imgs/dmarts.png" alt="" class="logo logo4" draggable="false">
-                        <img src="imgs/gp.png" alt="" class="logo logo5" draggable="false">
+    <div class="downloads">
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'pg-content')">PG Students</button>
+            <button class="tab-button" onclick="openTab(event, 'ug-content')">UG Students</button>
+        </div>
+    
+        <!-- PG Students Content -->
+        <div id="pg-content" class="tab-content active">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-tab">2020</div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><a href="#">1st Semester</a></li>
+                            <li><a href="#">2nd Semester</a></li>
+                            <li><a href="#">3rd Semester</a></li>
+                            <li><a href="#">4th Semester</a></li>
+                        </ul>
                     </div>
                 </div>
+                <!-- Add more accordion items here for other years... -->
             </div>
         </div>
-        <div class="scroll-text">
-            <h1>Department of Mathematics</h1>
+    
+        <!-- UG Students Content -->
+        <div id="ug-content" class="tab-content">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-tab">2024</div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><a href="#">1st Semester</a></li>
+                            <li><a href="#">2nd Semester</a></li>
+                            <li><a href="#">3rd Semester</a></li>
+                            <li><a href="#">4th Semester</a></li>
+                            <li><a href="#">5th Semester</a></li>
+                            <li><a href="#">6th Semester</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add more accordion items here for other years... -->
+            </div>
         </div>
-    </section>
+    </div>
+    
     
     <script src="test.js"></script>
 </body>
