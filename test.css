@@ -1,62 +1,34 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #2f3542;
-    color: #fff;
-    height: 100vh;
+/* General Styling */
+.left-right-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
 }
 
-.animated-text{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
-.animated-text span{
+/* Logo Slider */
+.logo-container {
     position: relative;
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    overflow: hidden;
 }
 
-.animated-text span::before{
-    content: "Department of Mathematics, DMU";
-    color: #ff7f50;
-    animation: words 20s infinite;
-}
-
-.animated-text span::after{
-    content: "";
-    position: absolute;
-    width: calc(100% + 5px);
+.logo-slider {
+    position: relative;
+    width: 100%;
     height: 100%;
-    background-color: #2f3542;
-    border-left: 2px solid #ff7f50;
-    right: -8px;
-    animation: cursor 1s infinite, typing 50s steps(100) infinite;
 }
 
-@keyframes cursor {
-    to{
-        border-left: 2px solid #ff7f5000;
-    }
+.logo-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-@keyframes words {
-    0%,49%{
-        content: "Department of Mathematics, DMU";
-    }
-    50%,100%{
-        content: "Students' Forum for Mathematics, DMU";
-    }
-}
-
-@keyframes typing {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-        width: 0;
-    }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
-        width: calc(100% + 5px);
-    }
+.logo-slider img.active {
+    opacity: 1;
 }

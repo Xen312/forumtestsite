@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Logo Slider Logic
     let currentLogoIndex = 0;
     const logos = document.querySelectorAll('.logo-slider img');
     const totalLogos = logos.length;
