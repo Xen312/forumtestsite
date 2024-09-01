@@ -16,6 +16,10 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
+p {
+    font-family: 'Jost';
+}
+
 header {
     width: 100vw;
     height: 80px;
@@ -863,12 +867,12 @@ button[type="submit"]:hover {
 /* Base Styles - Existing CSS */
 
 /* Mobile Styles for Screens 320px and Below */
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
     header {
         flex-direction: row-reverse;
-        align-items: flex-start;
+        align-items: center;
         height: 60px;
-        padding-top: 8px;
+        padding: 0;
     }
 
     nav {
@@ -934,11 +938,11 @@ button[type="submit"]:hover {
 
     .left {
         padding: 0 0 0 20px;
+        top: 240%;
     }
 
     .left h1 {
         font-size: 30px;
-        margin-top: 310px;
     }
 
     .scroll-text {
@@ -1132,11 +1136,11 @@ button[type="submit"]:hover {
     }
 
     .downloads-container {
-        margin: 0 0 0 20px;
+        margin: 0 20px;
     }
 
     .downloads, .sample-questions {
-        min-width: 280px;
+        min-width: 100%;
     }
 
     .tab-button {
@@ -1387,11 +1391,11 @@ button[type="submit"]:hover {
     }
 
     .event h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .event p {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .event-title p {
@@ -1399,7 +1403,11 @@ button[type="submit"]:hover {
     }
 
     .events-container {
-        margin-left: 0;
+        margin: 20px 0 0 0;
+    }
+
+    .event {
+        min-width: 100%;
     }
 
     /* Making the gallery-content horizontally scrollable */
@@ -1449,7 +1457,7 @@ button[type="submit"]:hover {
     }
 
     .downloads, .sample-questions {
-        min-width: 280px;
+        min-width: 440px;
     }
 
     .tab-button {
