@@ -30,6 +30,12 @@ header {
 
 nav {
     margin-right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav .menu-btn {
+    display: none;
 }
 
 nav ul {
@@ -66,7 +72,7 @@ nav ul li a {
 
 #home {
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 51%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%);
     display: flex;
     flex-direction: column;
     height: 100vh; /* Full height minus navbar */
@@ -290,6 +296,42 @@ nav ul li a {
     }
 }
 
+#university-notfications {
+    position: relative;
+    width: 100vw;
+    padding: 80px 20px;
+}
+
+.notification-title {
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+.notification-title h1 {
+    font-family: 'Cormorant Unicase';
+    color: #000000;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.notification-title p {
+    font-family: 'Jost';
+    font-size: 18px;
+    color: #000000;
+}
+
+.notification p {
+    color: #000000;
+    font-family: 'Jost';
+    margin-bottom: 10px;
+}
+
+.notification a {
+    color: blue;
+    font-family: 'Jost';
+    font-size: 20px;
+}
+
 /* Gallery section styles */
 #gallery {
     position: relative;
@@ -473,7 +515,7 @@ nav ul li a {
 }
 
 /* Events container using Flexbox */
-.events-container {
+.events-container, .notification-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; /* Allows wrapping to next row on smaller screens */
@@ -483,7 +525,7 @@ nav ul li a {
     margin-left: 100px;
 }
 
-.event {
+.event, .notification {
     flex: 1;
     min-width: 250px; /* Ensures divs don't get too small on smaller screens */
     max-width: 32%; /* Ensures no more than 3 columns on large screens */
@@ -816,4 +858,632 @@ button[type="submit"]:hover {
 
 #footer p {
     margin: 0;
+}
+
+/* Base Styles - Existing CSS */
+
+/* Mobile Styles for Screens 320px and Below */
+@media only screen and (max-width: 320px) {
+    header {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        height: 60px;
+        padding-top: 8px;
+    }
+
+    nav {
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        padding-left: 0;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    nav .nav-links {
+        display: none;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+        padding-top: 30px;
+    }
+
+    .title {
+        margin-right: 20px;
+        margin-left: 90px;
+        text-align: right;
+        font-size: 18px;
+    }
+
+    nav .menu-btn {
+        display: block;
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+
+    .left-right-container {
+        flex-direction: column-reverse;
+    }
+
+    #home {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 55%, rgba(255,255,255,1) 45%);
+    }
+
+    .right {
+        width: 90%;
+        margin-left: 20px;
+    }
+    
+    .right img.logo1, img.logo3, img.logo4, img.logo5 {
+        padding-left: 0;
+    }
+
+    .left {
+        padding: 0 0 0 20px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+        margin-top: 310px;
+    }
+
+    .scroll-text {
+        font-size: 50px;
+        bottom: 20px;
+        max-width: 100%;
+    }
+
+    #university-notfications, #gallery {
+        padding: 40px 20px;
+    }
+
+    .notification-title {
+        margin-left: 0;
+    }
+
+    .notification-title h1 {
+        font-size: 30px;
+    }
+
+    .notification-title p {
+        font-size: 15px;
+    }
+
+    .notification-list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .notification {
+        min-width: 100%;
+    }
+
+    .notification p {
+        font-size: 12px;
+    }
+
+    .notification a {
+        font-size: 14px;
+    }
+
+    .gallery-title {
+        margin-left: 0;
+    }
+
+    #gallery h1 {
+        font-size: 30px;
+    }
+
+    #gallery p {
+        font-size: 15px;
+    }
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for the cards */
+        gap: 10px; /* Space between the cards */
+    }
+
+    .image-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0; /* Example background color */
+        padding: 10px;
+        border-radius: 8px;
+        height: 220px;
+        min-width: 100%;
+        height: 170px;
+    }
+    
+    .image-card img {
+        max-width: 100%; /* Make sure images fit within their container */
+        height: auto;
+        border-radius: 4px;
+        top: 60px;
+    }
+
+    .image-card button {
+        font-size: 11px;
+        padding: 7px 7px;
+        bottom: 10px;
+    }
+
+    .faculty-title {
+        margin-left: 20px;
+    }
+
+    .faculty-title h1 {
+        font-size: 30px;
+    }
+
+    .teacher-container {
+        width: 100vw;
+        overflow-y: auto;
+        flex-direction: column;
+    }
+
+    .teacher {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    .teacher img {
+        max-width: 50%;
+    }
+
+    .teacher h2 {
+        font-size: 20px;
+    }
+
+    .teacher p {
+        font-size: 13px;
+    }
+
+    .descrpt {
+        width: 80%;
+        margin: 0;
+    }
+
+    #events {
+        padding: 40px 20px;
+    }
+
+    .event-title {
+        margin: 0;
+    }
+
+    .event-title h1 {
+        font-size: 30px;
+    }
+
+    .event h2 {
+        font-size: 20px;
+    }
+
+    .event p {
+        font-size: 11px;
+    }
+
+    .event-title p {
+        font-size: 15px;
+    }
+
+    .events-container {
+        margin-left: 0;
+    }
+
+    /* Making the gallery-content horizontally scrollable */
+    .gallery-content {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: none;
+        gap: 10px; /* Add space between images */
+        padding-bottom: 20px; /* Space below images */
+        margin: 20px 20px;
+    }
+
+    /* Styling for the images */
+    .gallery-content img {
+        max-width: 90%;
+        cursor: pointer;
+        border-radius: 5px;
+        scroll-snap-align: start;
+    }
+
+    /* Hide scrollbar for a cleaner look */
+    .gallery-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    #downloads {
+        padding: 0;
+    }
+
+    .downloads-title {
+        padding: 40px 20px;
+        margin: 0;
+    }
+
+    .downloads-title h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #downloads p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .downloads-container {
+        margin: 0 0 0 20px;
+    }
+
+    .downloads, .sample-questions {
+        min-width: 280px;
+    }
+
+    .tab-button {
+        font-size: 15px;
+    }
+
+    .accordion {
+        height: 195px;
+    }
+
+    .sample-questions {
+        margin-bottom: 40px;
+    }
+
+    #about-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-contact h1 {
+        font-size: 30px;
+    }
+
+    .about-us {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .contact-us {
+        margin: 0;
+        width: 100%;
+    }
+
+}
+
+/* Mobile Styles for Screens 320px and Below */
+@media only screen and (max-width: 480px) {
+    header {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        height: 60px;
+        padding-top: 8px;
+    }
+
+    nav {
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        padding-left: 0;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    nav .nav-links {
+        display: none;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+        padding-top: 30px;
+    }
+
+    .title {
+        margin-right: 20px;
+        margin-left: 90px;
+        text-align: right;
+        font-size: 18px;
+    }
+
+    nav .menu-btn {
+        display: block;
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+
+    .left-right-container {
+        flex-direction: column-reverse;
+    }
+
+    #home {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 55%, rgba(255,255,255,1) 45%);
+    }
+
+    .right {
+        width: 90%;
+        margin-left: 20px;
+    }
+    
+    .right img.logo1, img.logo3, img.logo4, img.logo5 {
+        padding-left: 0;
+    }
+
+    .left {
+        padding: 0 0 0 20px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+        margin-top: 310px;
+    }
+
+    .scroll-text {
+        font-size: 50px;
+        bottom: 20px;
+        max-width: 100%;
+    }
+
+    #university-notfications, #gallery {
+        padding: 40px 20px;
+    }
+
+    .notification-title {
+        margin-left: 0;
+    }
+
+    .notification-title h1 {
+        font-size: 30px;
+    }
+
+    .notification-title p {
+        font-size: 15px;
+    }
+
+    .notification-list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .notification {
+        min-width: 100%;
+    }
+
+    .notification p {
+        font-size: 12px;
+    }
+
+    .notification a {
+        font-size: 14px;
+    }
+
+    .gallery-title {
+        margin-left: 0;
+    }
+
+    #gallery h1 {
+        font-size: 30px;
+    }
+
+    #gallery p {
+        font-size: 15px;
+    }
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for the cards */
+        gap: 10px; /* Space between the cards */
+    }
+
+    .image-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0; /* Example background color */
+        padding: 10px;
+        border-radius: 8px;
+        height: 220px;
+        min-width: 100%;
+        height: 170px;
+    }
+    
+    .image-card img {
+        max-width: 100%; /* Make sure images fit within their container */
+        height: auto;
+        border-radius: 4px;
+        top: 60px;
+    }
+
+    .image-card button {
+        font-size: 11px;
+        padding: 7px 7px;
+        bottom: 10px;
+    }
+
+    .faculty-title {
+        margin-left: 20px;
+    }
+
+    .faculty-title h1 {
+        font-size: 30px;
+    }
+
+    .teacher-container {
+        width: 100vw;
+        overflow-y: auto;
+        flex-direction: column;
+    }
+
+    .teacher {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    .teacher img {
+        max-width: 50%;
+    }
+
+    .teacher h2 {
+        font-size: 20px;
+    }
+
+    .teacher p {
+        font-size: 13px;
+    }
+
+    .descrpt {
+        width: 80%;
+        margin: 0;
+    }
+
+    #events {
+        padding: 40px 20px;
+    }
+
+    .event-title {
+        margin: 0;
+    }
+
+    .event-title h1 {
+        font-size: 30px;
+    }
+
+    .event h2 {
+        font-size: 20px;
+    }
+
+    .event p {
+        font-size: 11px;
+    }
+
+    .event-title p {
+        font-size: 15px;
+    }
+
+    .events-container {
+        margin-left: 0;
+    }
+
+    /* Making the gallery-content horizontally scrollable */
+    .gallery-content {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: none;
+        gap: 10px; /* Add space between images */
+        padding-bottom: 20px; /* Space below images */
+        margin: 20px 20px;
+    }
+
+    /* Styling for the images */
+    .gallery-content img {
+        max-width: 90%;
+        cursor: pointer;
+        border-radius: 5px;
+        scroll-snap-align: start;
+    }
+
+    /* Hide scrollbar for a cleaner look */
+    .gallery-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    #downloads {
+        padding: 0;
+    }
+
+    .downloads-title {
+        padding: 40px 20px;
+        margin: 0;
+    }
+
+    .downloads-title h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #downloads p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .downloads-container {
+        margin: 0 0 0 20px;
+    }
+
+    .downloads, .sample-questions {
+        min-width: 280px;
+    }
+
+    .tab-button {
+        font-size: 15px;
+    }
+
+    .accordion {
+        height: 195px;
+    }
+
+    .sample-questions {
+        margin-bottom: 40px;
+    }
+
+    #about-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-contact h1 {
+        font-size: 30px;
+    }
+
+    .about-us {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .contact-us {
+        margin: 0;
+        width: 100%;
+    }
+
 }

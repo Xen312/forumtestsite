@@ -7,52 +7,26 @@
     <title>Test</title>
 </head>
 <body>
-    <div class="downloads">
-        <!-- Tabs -->
-        <div class="tabs">
-            <button class="tab-button active" onclick="openTab(event, 'pg-content')">PG Students</button>
-            <button class="tab-button" onclick="openTab(event, 'ug-content')">UG Students</button>
+    <section id="gallery">
+        <div class="gallery-title">
+            <h1 class="scroll-slide-in scroll-left-slide">Faculty Members</h1>
+            <p class="scroll-slide-in scroll-right-slide">Faculty members of the Department of Mathematics, DMU and its three constituent colleges.</p>
         </div>
-    
-        <!-- PG Students Content -->
-        <div id="pg-content" class="tab-content active">
-            <div class="accordion">
-                <div class="accordion-item">
-                    <div class="accordion-tab">2020</div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Add more accordion items here for other years... -->
+        <div class="side-scrolling-gallery">
+            <div class="image-card dmu">
+                <img src="imgs/dmu.png" alt="Dhanamanjuri University">
+            </div>
+            <div class="image-card dmsc">
+                <img src="imgs/dmsc.png" alt="DM College of Science">
+            </div>
+            <div class="image-card dmarts">
+                <img src="imgs/dmarts.png" alt="DMU College of Arts">
+            </div>
+            <div class="image-card gp">
+                <img src="imgs/gp.png" alt="GP Women's College">
             </div>
         </div>
-    
-        <!-- UG Students Content -->
-        <div id="ug-content" class="tab-content">
-            <div class="accordion">
-                <div class="accordion-item">
-                    <div class="accordion-tab">2024</div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li><a href="#">1st Semester</a></li>
-                            <li><a href="#">2nd Semester</a></li>
-                            <li><a href="#">3rd Semester</a></li>
-                            <li><a href="#">4th Semester</a></li>
-                            <li><a href="#">5th Semester</a></li>
-                            <li><a href="#">6th Semester</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Add more accordion items here for other years... -->
-            </div>
-        </div>
-    </div>
-    
+    </section>
     
     <script src="test.js"></script>
 </body>

@@ -82,7 +82,6 @@ for (var i = 0; i < acc.length; i++) {
     }
 }
 
-
 // Function to handle the toggle effect
 function toggleGallery(sectionId, buttonClass) {
     document.querySelectorAll(buttonClass).forEach(button => {
@@ -186,4 +185,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     setInterval(showNextLogo, 3000); // Change logo every 3 seconds
+});
+
+
+// Menu Bar
+
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
