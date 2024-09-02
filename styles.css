@@ -867,7 +867,7 @@ button[type="submit"]:hover {
 /* Base Styles - Existing CSS */
 
 /* Mobile Styles for Screens 320px and Below */
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
     header {
         flex-direction: row-reverse;
         align-items: center;
