@@ -1592,7 +1592,8 @@ button[type="submit"]:hover {
     .left {
         order: 2;
         width: 100%;
-        padding: 30px 120px;
+        padding: 0 0 0 30px;
+        height: 50vh;
     }
 
     .left h1 {
@@ -1602,7 +1603,6 @@ button[type="submit"]:hover {
     .scroll-text {
         order: 3;
         position: absolute;
-        bottom: 65px;
         left: 0;
         z-index: 2;
         background-color: #000000;
