@@ -1,12 +1,14 @@
-// JavaScript for toggling the nav menu
-document.getElementById('menu-btn').addEventListener('click', function() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('show');
-    
-    // Toggle the icon between menu and close (cross)
-    if (navLinks.classList.contains('show')) {
-        this.innerHTML = '✖'; // Cross icon
-    } else {
-        this.innerHTML = '☰'; // Menu icon
-    }
+document.getElementById('submitBtn').addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    var button = this;
+    button.classList.add('loading');
+    button.innerHTML = '<div class="loader"></div>';
+
+    // Simulate a loading delay of 2 seconds
+    setTimeout(function() {
+        button.classList.remove('loading');
+        button.textContent = 'Submitted';
+        button.disabled = true; // Optional: Disable the button after submission
+    }, 2000);
 });
