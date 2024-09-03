@@ -95,6 +95,7 @@ nav .menu-btn i {
     display: flex;
     justify-content: space-between;
     height: calc(100vh - 80px);
+    background-color: #ffffff !important;
 }
 
 .left, .right {
@@ -123,7 +124,7 @@ nav .menu-btn i {
 }
 
 .right {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     text-align: center;
 }
 
