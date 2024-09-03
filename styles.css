@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #ffffff;
     overflow-x: hidden;
@@ -49,6 +53,7 @@ nav ul {
     align-items: center;
     height: 100%;
     margin: 0;
+    background: rgb(116, 90, 30);
 }
 
 nav ul li {
@@ -874,326 +879,12 @@ button[type="submit"]:hover {
 
 /* Base Styles - Existing CSS */
 
-/* Mobile Styles for Screens 320px and Below */
-@media only screen and (max-width: 320px) {
-    header {
-        flex-direction: row-reverse;
-        align-items: center;
-        height: 60px;
-        padding: 0;
-    }
-
-    nav {
-        position: absolute;
-        left: 0;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding: 10px 0;
-        display: flex;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        padding-left: 0;
-        padding-bottom: 10px;
-        padding-left: 20px;
-    }
-
-    nav .nav-links {
-        display: none;
-    }
-
-    nav .nav-links.active {
-        display: flex;
-        padding-top: 30px;
-    }
-
-    .title {
-        margin-right: 20px;
-        margin-left: 90px;
-        text-align: right;
-        font-size: 18px;
-    }
-
-    nav .menu-btn {
-        display: block;
-        margin-left: 20px;
-        padding-top: 15px;
-    }
-
-    .left-right-container {
-        flex-direction: column-reverse;
-    }
-
-    #home {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(0deg, rgba(0,0,0,1) 55%, rgba(255,255,255,1) 45%);
-    }
-
-    .right {
-        width: 90%;
-        margin-left: 20px;
-    }
-    
-    .right img.logo1, img.logo3, img.logo4, img.logo5 {
-        padding-left: 0;
-    }
-
-    .left {
-        padding: 0 0 0 20px;
-        top: 240%;
-    }
-
-    .left h1 {
-        font-size: 30px;
-    }
-
-    .scroll-text {
-        font-size: 50px;
-        bottom: 20px;
-        max-width: 100%;
-    }
-
-    #university-notfications, #gallery {
-        padding: 40px 20px;
-    }
-
-    .notification-title {
-        margin-left: 0;
-    }
-
-    .notification-title h1 {
-        font-size: 30px;
-    }
-
-    .notification-title p {
-        font-size: 15px;
-    }
-
-    .notification-list {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .notification {
-        min-width: 100%;
-    }
-
-    .notification p {
-        font-size: 12px;
-    }
-
-    .notification a {
-        font-size: 14px;
-    }
-
-    .gallery-title {
-        margin-left: 0;
-    }
-
-    #gallery h1 {
-        font-size: 30px;
-    }
-
-    #gallery p {
-        font-size: 15px;
-    }
-
-    .gallery-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns for the cards */
-        gap: 10px; /* Space between the cards */
-    }
-
-    .image-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #f0f0f0; /* Example background color */
-        padding: 10px;
-        border-radius: 8px;
-        height: 220px;
-        min-width: 100%;
-        height: 170px;
-    }
-    
-    .image-card img {
-        max-width: 100%; /* Make sure images fit within their container */
-        height: auto;
-        border-radius: 4px;
-        top: 60px;
-    }
-
-    .image-card button {
-        font-size: 11px;
-        padding: 7px 7px;
-        bottom: 10px;
-    }
-
-    .faculty-title {
-        margin-left: 20px;
-    }
-
-    .faculty-title h1 {
-        font-size: 30px;
-    }
-
-    .teacher-container {
-        width: 100vw;
-        overflow-y: auto;
-        flex-direction: column;
-    }
-
-    .teacher {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 20px;
-    }
-
-    .teacher img {
-        max-width: 50%;
-    }
-
-    .teacher h2 {
-        font-size: 20px;
-    }
-
-    .teacher p {
-        font-size: 13px;
-    }
-
-    .descrpt {
-        width: 80%;
-        margin: 0;
-    }
-
-    #events {
-        padding: 40px 20px;
-    }
-
-    .event-title {
-        margin: 0;
-    }
-
-    .event-title h1 {
-        font-size: 30px;
-    }
-
-    .event h2 {
-        font-size: 20px;
-    }
-
-    .event p {
-        font-size: 11px;
-    }
-
-    .event-title p {
-        font-size: 15px;
-    }
-
-    .events-container {
-        margin-left: 0;
-    }
-
-    /* Making the gallery-content horizontally scrollable */
-    .gallery-content {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: none;
-        gap: 10px; /* Add space between images */
-        padding-bottom: 20px; /* Space below images */
-        margin: 20px 20px;
-    }
-
-    /* Styling for the images */
-    .gallery-content img {
-        max-width: 90%;
-        cursor: pointer;
-        border-radius: 5px;
-        scroll-snap-align: start;
-    }
-
-    /* Hide scrollbar for a cleaner look */
-    .gallery-content::-webkit-scrollbar {
-        display: none;
-    }
-
-    #downloads {
-        padding: 0;
-    }
-
-    .downloads-title {
-        padding: 40px 20px;
-        margin: 0;
-    }
-
-    .downloads-title h1 {
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    #downloads p {
-        font-size: 15px;
-        margin: 0;
-    }
-
-    .downloads-container {
-        margin: 0 20px;
-    }
-
-    .downloads, .sample-questions {
-        min-width: 100%;
-    }
-
-    .tab-button {
-        font-size: 15px;
-    }
-
-    .accordion {
-        height: 195px;
-    }
-
-    .sample-questions {
-        margin-bottom: 40px;
-    }
-
-    #about-contact {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about-contact h1 {
-        font-size: 30px;
-    }
-
-    .about-us {
-        margin-left: 0;
-        padding: 20px;
-        max-width: 100%;
-        overflow: hidden;
-        overflow-x: auto;
-    }
-
-    .contact-us {
-        margin: 0;
-        width: 100%;
-    }
-
-}
-
 /* Mobile Styles for Screens 480px and Below */
 @media only screen and (max-width: 480px) {
     header {
         flex-direction: row-reverse;
         align-items: flex-start;
         height: 60px;
-        padding-top: 8px;
     }
 
     nav {
@@ -1255,6 +946,7 @@ button[type="submit"]:hover {
 
     .right {
         order: 1;
+        height: 55vh;
         width: 70%;
     }
 
@@ -1343,10 +1035,9 @@ button[type="submit"]:hover {
     }
     
     .image-card img {
-        max-width: 100%; /* Make sure images fit within their container */
+        max-width: 60%; /* Make sure images fit within their container */
         height: auto;
         border-radius: 4px;
-        top: 60px;
     }
 
     .image-card button {
@@ -1521,7 +1212,6 @@ button[type="submit"]:hover {
         flex-direction: row-reverse;
         align-items: flex-start;
         height: 60px;
-        padding-top: 8px;
     }
 
     nav {
@@ -1530,12 +1220,11 @@ button[type="submit"]:hover {
         flex-direction: column;
         align-items: flex-start;
         margin-right: 0;
-        background: rgb(116, 90, 30);
     }
 
     nav ul {
         flex-direction: column;
-        padding: 10px 0;
+        padding: 10px 10px;
         display: flex;
         align-items: flex-start;
     }
@@ -1543,7 +1232,7 @@ button[type="submit"]:hover {
     nav ul li {
         padding-left: 0;
         padding-bottom: 10px;
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     nav ul li a {
@@ -1564,7 +1253,6 @@ button[type="submit"]:hover {
         margin-left: 0px;
         text-align: right;
         font-size: 25px;
-        padding-top: 10px;
     }
 
     nav .menu-btn {
@@ -1593,7 +1281,7 @@ button[type="submit"]:hover {
         order: 2;
         width: 100%;
         padding: 0 0 0 30px;
-        height: 50vh;
+        height: 55vh;
     }
 
     .left h1 {
@@ -1670,18 +1358,16 @@ button[type="submit"]:hover {
         border-radius: 8px;
         height: 220px;
         min-width: 100%;
-        height: 170px;
     }
     
     .image-card img {
-        max-width: 100%; /* Make sure images fit within their container */
+        width: 60%; /* Make sure images fit within their container */
         height: auto;
         border-radius: 4px;
-        top: 60px;
     }
 
     .image-card button {
-        font-size: 11px;
+        font-size: 15px;
         padding: 7px 7px;
         bottom: 10px;
     }
