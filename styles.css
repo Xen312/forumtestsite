@@ -73,6 +73,10 @@ nav ul li a {
     display: none;
 }
 
+nav .menu-btn i {
+    font-size: 25px;
+}
+
 .title {
     font-size: 25px;
     font-weight: 700;
@@ -533,7 +537,7 @@ nav ul li a {
 /* Events container using Flexbox */
 .events-container, .notification-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap; /* Allows wrapping to next row on smaller screens */
     gap: 20px; /* Space between columns */
     margin-top: 20px;
@@ -883,6 +887,10 @@ button[type="submit"]:hover {
 @media only screen and (max-width: 480px) {
     body {
         overflow-x: hidden;
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 
     header {
@@ -1246,6 +1254,10 @@ button[type="submit"]:hover {
         overflow-x: hidden;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     header {
         flex-direction: row-reverse;
         align-items: flex-start;
@@ -1314,7 +1326,7 @@ button[type="submit"]:hover {
     .right {
         order: 1;
         height: 45vh;
-        width: 50%;
+        width: 65%;
     }
 
     .left {
