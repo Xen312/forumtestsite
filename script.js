@@ -210,3 +210,18 @@ document.getElementById('submitBtn').addEventListener('click', function(e) {
         button.disabled = true; // Optional: Disable the button after submission
     }, 2000);
 });
+
+// Gallery closing button
+
+document.querySelectorAll('.close-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const gallerySection = document.getElementById(targetId);
+
+        if (gallerySection) {
+            gallerySection.style.height = '0px';
+            gallerySection.style.overflow = 'hidden';
+            gallerySection.classList.remove('active');
+        }
+    });
+});

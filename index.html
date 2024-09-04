@@ -79,19 +79,19 @@
         <div class="gallery-container">
             <div class="image-card">
                 <img src="imgs/dmu.png" alt="Dhanamanjuri University">
-                <button class="dmu">DM University</button>
+                <button class="dmu" onclick="location.href='#dmu-gallery' ">DM University</button>
             </div>
             <div class="image-card">
                 <img src="imgs/dmsc.png" alt="DM College of Science">
-                <button class="dmsc">DM College of Science</button>
+                <button class="dmsc" onclick="location.href='#dmsc-gallery' ">DM College of Science</button>
             </div>
             <div class="image-card">
                 <img src="imgs/dmarts.png" alt="Event Image 3">
-                <button class="dmarts">DMU College of Arts</button>
+                <button class="dmarts" onclick="location.href='#dmarts-gallery' ">DMU College of Arts</button>
             </div>
             <div class="image-card">
                 <img src="imgs/gp.png" alt="GP Women's College">
-                <button class="gp">GP Women's College</button>
+                <button class="gp" onclick="location.href='#gp-gallery' ">GP Women's College</button>
             </div>
         </div>
     </section>
@@ -99,7 +99,8 @@
     <!-- DMU -->
     <section id="dmu-gallery" class="gallery-section">
         <div class="faculty-title">
-            <h1>Teachers of the Department of Mathematics, Dhanamanjuri University</h1>
+            <h1>Teachers of the Department of Mathematics, <br> Dhanamanjuri University</h1>
+            <button class="close-btn" data-target="dmu-gallery" onclick="location.href='#gallery' ">&times;</button>
         </div>
         <div class="teacher-container">
             <div class="teacher">
@@ -139,6 +140,7 @@
     <section id="dmsc-gallery" class="gallery-section">
         <div class="faculty-title">
             <h1>Teachers of the Department of Mathematics, <br> DM College of Science</h1>
+            <button class="close-btn" data-target="dmsc-gallery" onclick="location.href='#gallery' ">&times;</button>
         </div>
         <div class="teacher-container">
             <div class="teacher">
@@ -193,7 +195,8 @@
     <!-- DM Arts -->
     <section id="dmarts-gallery" class="gallery-section">
         <div class="faculty-title">
-            <h1>Teachers of the Department of Mathematics, DM College of Arts</h1>
+            <h1>Teachers of the Department of Mathematics, <br> DM College of Arts</h1>
+            <button class="close-btn" data-target="dmarts-gallery" onclick="location.href='#gallery' ">&times;</button>
         </div>
         <div class="teacher-container">
             <div class="teacher">
@@ -233,6 +236,7 @@
     <section id="gp-gallery" class="gallery-section">
         <div class="faculty-title">
             <h1>Teachers of the Department of Mathematics, <br> G.P. Women's College</h1>
+            <button class="close-btn" data-target="gp-gallery" onclick="location.href='#gallery' ">&times;</button>
         </div>
         <div class="teacher-container">
             <div class="teacher">
@@ -281,7 +285,7 @@
     <section id="events" class="events">
         <div class="event-title">
             <h1 class="scroll-slide-in scroll-left-slide">Events and Works</h1>
-            <p class="scroll-slide-in scroll-right-slide">A list of all the events organized by the Students' Forum for Mathematics, DMU along with the Department of Mathematics, DMU</p>
+            <p class="scroll-slide-in scroll-right-slide">A list of all the events organized by the Students' Forum for Mathematics, DMU along with the Department of Mathematics, DMU. Press on the event to see pictures from that event</p>
         </div>
         <div class="events-container">
             <div class="event" onclick="showGallery('gallery-1')">

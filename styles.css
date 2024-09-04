@@ -394,7 +394,6 @@ nav .menu-btn i {
 }
 
 
-
 .image-card {
     background-color: #ffffff;
     display: flex;
@@ -435,12 +434,22 @@ nav .menu-btn i {
 
 .faculty-title {
     padding-top: 20px;
-    margin-left: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
 .faculty-title h1 {
     margin-bottom: 20px;
     font-size: 50px;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: #ffffff;
 }
 
 #dmsc-gallery,
@@ -450,7 +459,7 @@ nav .menu-btn i {
     background: #000000;
     width: 100vw;
     height: 0;
-    overflow: hidden;
+    overflow-y: auto;
     transition: height 0.5s ease-in-out, transform 0.5s ease-in-out;
     transform: scaleY(0);
     transform-origin: top;
@@ -460,7 +469,7 @@ nav .menu-btn i {
 #dmsc-gallery.active,
 #dmarts-gallery.active,
 #gp-gallery.active {
-    height: auto;
+    height: 100vh;
     transform: scaleY(1);
 }
 
@@ -868,6 +877,15 @@ button[type="submit"]:hover {
     background-color: #23607d;
 }
 
+#submitBtn.loading .loader {
+    display: block;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
 #footer {
     width: 100vw;
     background-color: #032f41;
@@ -1063,7 +1081,7 @@ button[type="submit"]:hover {
     }
 
     .faculty-title {
-        margin-left: 20px;
+        margin: 0 20px;
     }
 
     .faculty-title h1 {
@@ -1427,7 +1445,7 @@ button[type="submit"]:hover {
     }
 
     .faculty-title {
-        margin-left: 20px;
+        margin: 0 20px;
     }
 
     .faculty-title h1 {
